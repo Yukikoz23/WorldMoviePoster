@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="description" content="世界の映画ポスターを見てみよう">
+    <meta name="keywords" content="映画,ポスター,世界の映画,映画ポスター,検索">
+    <title>World Movie Poster</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__heading"><a class="header__title" href="">World Movie Poster</a></h1>
+    </header>
+    <section class="search">
+      <p class="search__message">世界の映画ポスターを見てみよう</p>
+      <form class="search__form">
+        <input class="search__keyword" type="text" placeholder="映画、ドラマのタイトル...">
+        <button class="search__btn" type="submit">
+          <img class="search__icon" src="img/search.png" alt="search">
+        </button>
+        <input id="ja" class="search__radio search__radio--ja" type="radio" name="language" value="JA" checked>
+        <label for="ja">JA</label>
+        <input id="en" class="search__radio search__radio--en" type="radio" name="language" value="EN">
+        <label for="en">EN</label>
+      </form>
+    </section>
+    <section class="movies hidden">
+      <p class="movies__text movies__text--count">検索結果：　○件</p>
+      <p class="movies__text movies__text--fixed">映画を選択してください。</p>
+      <ul class="movies__lists">
+        <!-- <li class="movies__list">
+          <img class="movies__img" src="img/sample_img.png">
+          <p class="movies__img-text hidden">他国のポスターを見る</p>
+          <p class="movies__title">映画タイトル</p>
+        </li> -->
+      </ul>
+    </section>
+    <section class="posters hidden">
+      <h2 class="posters__main-title">映画タイトル</h2>
+      <ul class="posters__lists">
+        <!-- <li class="posters__list">
+          <img class="posters__img" src="img/sample_img.png">
+          <p class="posters__country">日本</p>
+          <p class="posters__title">映画タイトル</p>
+        </li> -->
+      </ul>
+      <div class="posters__btn posters__btn--back">← 戻る</div>
+      <div class="posters__btn posters__btn--top">別の映画を検索する</div>
+    </section>
+    <footer class="footer">
+      <p class="footer__text">This product uses the <a class="footer__link" href="https://www.themoviedb.org/" target="_blank">TMDb</a> API but is not endorsed or certified by TMDb.</p>
+      <p class="footer__text">@2019 yuki</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

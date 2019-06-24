@@ -1,0 +1,240 @@
+@charset "UTF-8";
+body {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  background-color: #F5F5F7;
+  margin: 0;
+  font-family: 'Verdana', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', sans-serif;
+  color: #3B3044;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  position: relative;
+  margin: 0 24px 56px 24px;
+}
+
+.header {
+  height: 88px;
+  background-color: #353067;
+  padding: 0 32px;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    height: 56px;
+    padding: 0 16px;
+  }
+}
+.header__heading {
+  margin: 0;
+}
+.header__title {
+  line-height: 88px;
+  color: #FFCC00;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .header__title {
+    line-height: 56px;
+    font-size: 20px;
+  }
+}
+
+.footer {
+  background-color: #3B3044;
+  margin-top: auto;
+  padding: 15px 32px;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 16px;
+  }
+}
+.footer__text {
+  color: #F5F5F7;
+  font-size: 12px;
+  font-style: italic;
+  text-align: right;
+}
+@media screen and (max-width: 768px) {
+  .footer__text {
+    font-size: 10px;
+  }
+}
+.footer__link {
+  color: #F5F5F7;
+}
+
+.search {
+  margin: 32px 32px 56px 32px;
+}
+.search__message {
+  font-style: italic;
+}
+.search__form {
+  font-size: 12px;
+}
+.search__keyword {
+  width: 400px;
+  height: 40px;
+  margin-bottom: 8px;
+  padding: 0 8px;
+  border: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  box-shadow: 1px 1px 0px 1px #D5D5D9;
+  outline: none;
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .search__keyword {
+    width: 80%;
+    height: 32px;
+  }
+}
+.search__keyword::placeholder {
+  color: #CBCBCD;
+  font-style: italic;
+}
+.search__btn {
+  height: 40px;
+  cursor: pointer;
+  background-color: #937E41;
+  margin-left: -5px;
+  padding: 0 12px;
+  border: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  box-shadow: 1px 1px 0px 1px #D5D5D9;
+  outline: none;
+  vertical-align: sub;
+}
+@media screen and (max-width: 768px) {
+  .search__btn {
+    height: 32px;
+    padding: 0 8px;
+  }
+}
+.search__btn:hover {
+  opacity: 0.8;
+}
+.search__icon {
+  width: 20px;
+  height: 20px;
+}
+.search__radio {
+  display: inline-block;
+  margin-left: 12px;
+  font-size: 12px;
+}
+@media screen and (max-width: 768px) {
+  .search__radio {
+    margin-left: 4px;
+  }
+}
+
+.movies, .posters {
+  margin: 0 80px 56px 80px;
+}
+@media screen and (max-width: 768px) {
+  .movies, .posters {
+    margin: 0 40px 56px 40px;
+  }
+}
+.movies__title, .posters__title {
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.movies__text {
+  color: #353067;
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+.movies__text--fixed {
+  margin-bottom: 56px;
+}
+.movies__list {
+  width: 180px;
+}
+.movies__img {
+  cursor: pointer;
+  width: 180px;
+}
+.movies__img:hover {
+  opacity: 0.1;
+}
+.movies__img-text {
+  position: absolute;
+  top: 112px;
+  left: 12px;
+  pointer-events: none;
+  color: #937E41;
+  font-size: 16px;
+}
+
+.posters__main-title {
+  color: #353067;
+  margin-top: 0;
+  margin-bottom: 56px;
+  font-size: 32px;
+}
+@media screen and (max-width: 768px) {
+  .posters__main-title {
+    font-size: 24px;
+  }
+}
+.posters__list {
+  width: 220px;
+}
+.posters__img {
+  width: 220px;
+}
+.posters__country {
+  color: #D6B045;
+  margin: 8px 0;
+  font-size: 24px;
+  font-style: italic;
+}
+.posters__title {
+  margin: 0;
+}
+.posters__btn {
+  display: inline-block;
+  height: 30px;
+  cursor: pointer;
+  background-color: #937E41;
+  color: #F5F5F7;
+  margin-left: 16px;
+  padding: 0px 12px 2px;
+  border-radius: 2px;
+  line-height: 32px;
+  box-shadow: 1px 1px 0px 1px #D5D5D9;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: top;
+}
+.posters__btn:hover {
+  opacity: 0.8;
+}
+
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */
